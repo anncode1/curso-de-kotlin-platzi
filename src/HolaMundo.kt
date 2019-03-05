@@ -43,8 +43,15 @@ fun main(args: Array<String>) {
 
     println(parrafo.trimMargin("** "))
 
+    val oneToHundred = 1..5
+    for (i in oneToHundred){
+        println(i)
+    }
 
-
+    //val aToC = 'A'..'C'
+    for (letra in 'A'..'C'){
+      println(letra)
+    }
 
 
 }
