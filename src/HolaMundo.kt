@@ -43,6 +43,7 @@ fun main(args: Array<String>) {
 
     println(parrafo.trimMargin("** "))
 
+    //Operador Rango
     val oneToHundred = 1..5
     for (i in oneToHundred){
         println(i)
@@ -52,6 +53,23 @@ fun main(args: Array<String>) {
     for (letra in 'A'..'C'){
       println(letra)
     }
+
+
+    //if operadores lógicos booleano true o false
+    val numero = 20
+    if (numero.equals(5)){//true
+        println("Sí son iguales")
+    }else{
+        println("No, no son iguales")
+    }
+
+    //when switch case
+    when(numero){
+        in 1..5 -> println("Sí está entre 1 y 5")
+        in 1..3 -> println("Sí está entre 1 y 3")
+        else -> println("No está en alguno de los anteriores")
+    }
+
 
 
 }
