@@ -119,16 +119,6 @@ fun main(args: Array<String>) {
 
 
 
-    //Promedio de los numeros
-    val numbers = intArrayOf(6,6,23,9,2,3,2)
-    var sum = 0
-    for (num in numbers){
-        sum += num
-    }
-
-    val average = sum / numbers.size
-    println("Promedio: $average")
-
     var arrayObject = arrayOf(1,2,3)
     var intPrimitive : IntArray = arrayObject.toIntArray()
 
@@ -149,6 +139,29 @@ fun main(args: Array<String>) {
         println("Array reversa: $a")
     }
 
+    var x = 5
+    println("X es igual a 5? ${x==5}")//true
+
+    var mensaje = "El valor de x es $x"
+    x++
+    println("${mensaje.replace("es", "fue")}, x es igual a: $x")
+
+    println("Raiz cuadrada de: ${Math.sqrt(4.0)}")
+
+    val numbers = intArrayOf(6,6,23,9,2,3,2)
+    println("El promedio de los números es: ${averageNumbers(numbers,2)}")
+
+}
+
+fun averageNumbers(numbers: IntArray, n: Int): Int {
+    //Promedio de los numeros
+
+    var sum = 0
+    for (num in numbers){
+        sum += num
+    }
+
+    return (sum / numbers.size)+n
 }
 
 
