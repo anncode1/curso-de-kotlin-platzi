@@ -10,8 +10,6 @@ class Shoe { // Clases para Datos - Data Class
         }
         get() = field
 
-
-    var color: String = "White"//Cool
     var model: String = "Boots" //No se ponga Tenis
         set(value) {
             if (value.equals("Tenis"))
@@ -20,4 +18,7 @@ class Shoe { // Clases para Datos - Data Class
                 field = value
         }
         get() = field
+
+    var color: String = "White"//Cool
+
 }

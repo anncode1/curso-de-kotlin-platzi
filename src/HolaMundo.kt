@@ -1,4 +1,5 @@
 import model.Camera
+import model.Movie
 import model.Shoe
 
 //const tiempo de compilación
@@ -201,7 +202,16 @@ fun main(args: Array<String>) {
     println(shoe.model)
 
 
+    val movie = Movie("Coco", "Pixar", 120)
+    println("MOVIE")
+    println(movie.title)
+    println(movie.creator)
+    println("${movie.duration} min.")
+
+
 }
+
+
 
 fun evaluate( number: Int = 2, character: Char = '='): String {
     return "${number} es ${character}"
