@@ -2,7 +2,7 @@ package model
 
 class Camera {
 
-    var isOn: Boolean = false
+    private var isOn: Boolean = false
 
     fun turnOn() {
         isOn = true
@@ -10,6 +10,10 @@ class Camera {
 
     fun turnOff(){
         isOn = false
+    }
+
+    fun cameraStatus(): String {
+        return if (isOn) "Camera is Turned" else "Camera is not Turned"
     }
 
 }

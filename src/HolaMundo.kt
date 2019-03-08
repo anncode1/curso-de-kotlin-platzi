@@ -185,9 +185,8 @@ fun main(args: Array<String>) {
 
     val camera = Camera()
     camera.turnOn()
-    println("La camara esta: ${camera.isOn}")
-
-    camera.isOn = false
+    camera.turnOff()
+    println(camera.cameraStatus())
 
 
 
