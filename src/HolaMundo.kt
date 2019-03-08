@@ -194,12 +194,14 @@ fun main(args: Array<String>) {
     println("Resolution: ${camera.getResolution()}")
 
 
-    var shoe = Shoe()
-    shoe.size = 37
+    var shoe = Shoe(12345, "Praga")
+    /*shoe.size = 37
     println(shoe.size)
 
     shoe.model = "Zapatos de Tacón"
     println(shoe.model)
+
+    println(shoe.mark)*/
 
 
     val movie = Movie("Coco", "Pixar", 120)
