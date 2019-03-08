@@ -1,3 +1,5 @@
+import model.Camera
+
 //const tiempo de compilación
 const val N = "NAME" // variables manera global
 var n = "n" //mala practica de programación
@@ -179,6 +181,17 @@ fun main(args: Array<String>) {
     }
 
     println(calculateNumber(6))
+
+
+    val camera = Camera()
+    camera.turnOn()
+    println("La camara esta: ${camera.isOn}")
+
+    camera.isOn = false
+
+
+
+
 
 
 
