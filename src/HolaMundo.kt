@@ -186,17 +186,10 @@ fun main(args: Array<String>) {
     val camera = Camera()
     camera.turnOn()
     camera.turnOff()
-    println(camera.cameraStatus())
+    println(camera.getCameraStatus())
 
-
-
-
-
-
-
-
-
-
+    camera.setResolution(1080)
+    println("Resolution: ${camera.getResolution()}")
 
 
 
