@@ -1,4 +1,5 @@
 import model.Camera
+import model.Shoe
 
 //const tiempo de compilación
 const val N = "NAME" // variables manera global
@@ -192,6 +193,12 @@ fun main(args: Array<String>) {
     println("Resolution: ${camera.getResolution()}")
 
 
+    var shoe = Shoe()
+    shoe.size = 37
+    println(shoe.size)
+
+    shoe.model = "Zapatos de Tacón"
+    println(shoe.model)
 
 
 }
