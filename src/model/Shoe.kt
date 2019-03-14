@@ -7,7 +7,6 @@ class Shoe(name: String, description: String, sku: Int, var brand: String):
         return "Create shoe"
     }
 
-
     override fun read(): String {
         return "Read shoe"
     }

@@ -1,5 +1,6 @@
 import model.Camera
 import model.Movie
+import model.Product
 import model.Shoe
 
 //const tiempo de compilación
@@ -196,7 +197,6 @@ fun main(args: Array<String>) {
 
     var shoe = Shoe("Shoe","Blue Shoes", 12345, "Praga")
     println("Shoe: ${shoe}")
-
 
     /*shoe.size = 37
     println(shoe.size)

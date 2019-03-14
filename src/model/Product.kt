@@ -1,26 +1,18 @@
 package model
 
-open class Product(var name: String, var description: String, var sku: Int){
+abstract class Product(var name: String, var description: String, var sku: Int){
 
     override fun toString(): String {
         return "\nName: $name \nDescription: $description \nSKU $sku"
     }
 
-    open fun create(): String{
-        return "Create"
-    }
+    abstract fun create(): String
 
-    open fun read(): String{
-        return "read"
-    }
+    abstract fun read(): String
 
-    open fun update(): String{
-        return "update"
-    }
+    abstract fun update(): String
 
-    open fun delete(): String{
-        return "delete"
-    }
+    abstract fun delete(): String
 
 
 }
