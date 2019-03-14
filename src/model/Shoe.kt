@@ -1,10 +1,15 @@
 package model
 
-class Shoe(var sku: Int, var mark: String) { // Clases para Datos - Data Class
+class Shoe(var sku: Int, var mark: String): Any() { // Clases para Datos - Data Class
+
+    override fun toString(): String {
+        return "SKU ID: $sku \nMarca: $mark \nModelo: $model \nSize: $size \nColor: $color"
+    }
 
     init {
         println("SKU ID: $sku")
         println("Marca: $mark")
+
     }
 
     var size: Int = 34 //Mínimo sea 34
