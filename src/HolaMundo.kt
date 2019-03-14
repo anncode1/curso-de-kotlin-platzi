@@ -197,6 +197,7 @@ fun main(args: Array<String>) {
 
     var shoe = Shoe("Shoe","Blue Shoes", 12345, "Praga")
     println("Shoe: ${shoe}")
+    shoe.create()
 
     /*shoe.size = 37
     println(shoe.size)
