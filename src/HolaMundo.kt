@@ -215,8 +215,24 @@ fun main(args: Array<String>) {
     println("${movie.duration} min.")
 
 
+    var resultado = calculadora(1,2,3, ::multiplicar)
+    println("La calculadora opero una multiplicacion: $resultado")
+
+    println("La resta fue: ${calculadora(4,5,6, ::restar)}")
+
+    println("La suma fue: ${calculadora(4,5,6, ::sumar)}")
 
 }
+
+fun calculadora(a: Int, b: Int, c: Int, operacion:(Int, Int, Int) -> Int): Int {
+    return operacion(a,b,c)
+}
+
+fun sumar(a: Int, b: Int, c: Int) = a+b+c
+fun restar(a: Int, b: Int, c: Int) = a-b-c
+fun multiplicar(a: Int, b: Int, c: Int) = a*b*c
+
+
 
 
 
